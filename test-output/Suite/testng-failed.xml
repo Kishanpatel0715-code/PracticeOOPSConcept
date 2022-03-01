@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" verbose="3" name="Test(failed)" parallel="methods">
+    <parameter name="password" value="Kishan@07"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.flipkart.com/"/>
+    <parameter name="email" value="patelkishan0715@gmail.com"/>
+    <classes>
+      <class name="com.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="VerifyReturnLinkTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
